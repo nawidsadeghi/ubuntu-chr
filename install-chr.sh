@@ -24,6 +24,7 @@ CHR_VERSION="7.23.5"
 CHR_FILE="chr-${CHR_VERSION}.img.zip"
 CHR_URL="https://download.mikrotik.com/routeros/${CHR_VERSION}/${CHR_FILE}"
 CHR_INFO_URL="https://mikrotik.com/download/chr"
+PROJECT_VERSION="1.1.0"
 
 SUPPORTED_UBUNTU_VERSIONS=("20.04" "22.04" "24.04" "26.04")
 
@@ -109,8 +110,9 @@ trap 'fail "Unexpected error on line ${LINENO}."' ERR
 clear || true
 
 echo -e "${GREEN}========================================${NC}"
-echo -e "${GREEN}   AryanaNet — MikroTik CHR Installer${NC}"
+echo -e "${GREEN}      Ubuntu VPS -> MikroTik CHR${NC}"
 echo -e "${GREEN}========================================${NC}"
+echo -e "${WHITE}Installer version: ${PROJECT_VERSION}${NC}"
 echo
 
 # ============================================================================
